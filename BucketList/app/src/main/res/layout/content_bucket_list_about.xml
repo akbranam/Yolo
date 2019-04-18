@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- content_bucket_list_about.xml: layout file for about screen
+Created by: Anna Branam
+Created on: 3/3/2017
+Last modified by: Anna Branam
+Last modified on: 3/3/2017
+-->
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!-- about text -->
+    <TextView
+        android:text="@string/details_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_about"
+        android:padding="15dp"/>
+</LinearLayout>

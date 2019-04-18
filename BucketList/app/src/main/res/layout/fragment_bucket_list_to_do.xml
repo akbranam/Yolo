@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+fragment_bucket_list_to_do.xml: layout for to-do list screen
+Created by: Anna Branam
+Created on: 2/24/17
+Last Modified by: Anna Branam
+Last Modified on: 3/3/17
+-->
+
+
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nsv_to_do"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--non scrollable view for to-do list wrapped in scrollable view-->
+    <edu.indiana.akbranam.bucketlist.NonScrollListView
+        android:id="@+id/list_view_to_do"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</android.support.v4.widget.NestedScrollView>

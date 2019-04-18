@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+content_bucket_list_view_item.xml: layout for view item screen
+Created by: Anna Branam
+Created on: 2/28/17
+Last Modified by: Anna Branam
+Last Modified on: 3/3/17
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/ll_view_item"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="15dp">
+
+                <!-- item title-->
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_name_view_item"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:layout_width="match_parent"
+                    android:text="Title name placehold"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/fab_delete_view_item"/>
+                <!-- edit button-->
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    app:fabSize="mini"
+                    app:srcCompat="@drawable/ic_edit"
+                    android:id="@+id/fab_edit_view_item"
+                    android:padding="50dp"
+                    android:layout_gravity="right"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"/>
+
+                <!-- delete button-->
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    app:fabSize="mini"
+                    app:srcCompat="@android:drawable/ic_menu_delete"
+                    android:id="@+id/fab_delete_view_item"
+                    android:layout_below="@+id/fab_edit_view_item"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+            <!-- item date-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_local_view_item"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:layout_marginBottom="10dp"/>
+            <!-- item location-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_date_view_item"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:layout_marginBottom="10dp"/>
+            <!-- item difficulty-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_diff_view_item"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:layout_marginBottom="10dp"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <!-- complete activity button-->
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_try_view_item"
+                        android:text="Try it"
+                        style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
+                        android:textSize="18sp"/>
+                    <!-- back to list button-->
+                    <Button
+                        android:text="Maybe Later"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_later_view_item"
+                        android:layout_marginLeft="10dp"
+                        style="@android:style/Widget.Material.Button.Borderless.Colored"
+                        android:textSize="18sp"/>
+
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

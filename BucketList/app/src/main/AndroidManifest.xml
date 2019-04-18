@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="edu.indiana.akbranam.bucketlist">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".BucketListMainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".BucketListNewItemActivity"
+                  android:label="@string/label_bucket_list_new_item"
+                  android:screenOrientation="portrait"
+                  >
+        </activity>
+        <activity android:name=".BucketListAboutActivity"
+                  android:label="@string/label_bucket_list_about"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.Holo.Light.Dialog">
+        </activity>
+        <activity android:name=".BucketListViewItemActivity"
+                  android:screenOrientation="portrait"
+                  android:label="@string/label_bucket_list_view_item">
+        </activity>
+        <activity android:name=".BucketListPrefsActivity"
+                  android:screenOrientation="portrait"
+                  android:label="@string/label_bucket_list_prefs"
+                  android:theme="@style/Theme.AppCompat.Light.Dialog">
+        </activity>
+        <activity android:name=".BucketListEditItemActivity"
+                  android:screenOrientation="portrait"
+                  android:label="@string/label_bucket_list_edit_item"></activity>
+        <activity android:name=".BucketListPickDateActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/Theme.AppCompat.Light.Dialog">
+        </activity>
+
+    </application>
+
+</manifest>

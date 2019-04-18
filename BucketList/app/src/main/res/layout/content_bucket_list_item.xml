@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+content_bucket_list_item.xml: layout for items in app's lists
+Created by: Anna Branam
+Created on: 3/1/17
+Last Modified by: Anna Branam
+Last Modified on: 3/3/17
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_list_item"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <!-- item title text-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_list_item_name"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="35dp"
+        android:text="name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        />
+</LinearLayout>

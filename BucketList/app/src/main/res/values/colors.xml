@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+colors.xml: contains color resources for app
+Created by: Anna Branam
+Created on: 2/21/17
+Last Modified by: Anna Branam
+Last Modified on: 3/3/17
+-->
+
+<resources>
+    <color name="colorPrimary">#3e414e</color>
+    <color name="colorPrimaryDark">#2f3240</color>
+    <color name="colorAccent">#b980ef</color>
+
+    <color name="colorPrimaryBackground">#e9edff</color>
+
+
+    <!-- list background colors-->
+    <color name="oddListItemBackground">#bfddf7</color>
+    <color name="evenListItemBackground">#d7c0fc</color>
+    <color name="evenListBackground">#e8daff</color>
+    <color name="oddListBackground">#d3e7f9</color>
+
+</resources>

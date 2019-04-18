@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+menu_bucket_list_settings.xml: Settings menu resource file for app
+Created by: Anna Branam
+Created on: 2/28/17
+Last Modified by: Anna Branam
+Last Modified on: 2/28/17
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--app settings menu content-->
+    <item android:id="@+id/settings_menu"
+          android:title="@string/title_settings"
+          android:alphabeticShortcut="@string/shortcut_settings" />
+
+</menu>

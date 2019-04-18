@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+settings.xml: Settings resource file for app
+Created by: Anna Branam
+Created on: 2/28/17
+Last Modified by: Anna Branam
+Last Modified on: 3/3/17
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--sound setings-->
+    <CheckBoxPreference
+        android:key="sound"
+        android:title="@string/title_sound_prefs"
+        android:summary="@string/desc_sound_prefs"
+        android:defaultValue="true"/>
+
+    <!-- numbered list settings -->
+    <CheckBoxPreference
+        android:key="numbers"
+        android:title="@string/title_num_prefs"
+        android:summary="@string/desc_num_prefs"
+        android:defaultValue="false"/>
+
+
+</PreferenceScreen>

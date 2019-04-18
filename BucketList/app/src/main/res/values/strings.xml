@@ -1,0 +1,83 @@
+<!--
+strings.xml: Strings resource file for app
+Created by: Anna Branam
+Created on: 2/21/17
+Last Modified by: Anna Branam
+Last Modified on: 3/3/17
+-->
+
+
+<resources>
+    <string name="app_name">YOLO</string>
+    <string name="app_name_meaning">(You Only Live Once)</string>
+    <string name="action_settings">Settings</string>
+
+    <!--main activity values -->
+    <string name="title_home_main">Home</string>
+    <string name="title_todo_main">To Do</string>
+    <string name="title_complete_main">Completed</string>
+
+    <!--home screen values-->
+    <string name="home_button_new">New</string>
+    <string name="home_button_try">Try Something</string>
+    <string name="home_button_about">About</string>
+    <string name="home_button_exit">Exit</string>
+    <string name="toast_add">Add some activities to your To Do List</string>
+
+    <!-- new item screen values -->
+    <string name="new_item_name_hint">Think of an activity or an event…</string>
+    <string name="new_item_date_hint">Try it on or before...</string>
+    <string name="new_item_local_hint">Where is it?</string>
+    <string name="button_choose_date_new_item">Pick a Date</string>
+
+    <!--View Item values-->
+    <string name="label_view_item_date">Complete By: </string>
+    <string name="label_view_item_local">Complete At: </string>
+    <string name="button_view_item_complete">Do It</string>
+    <string name="button_view_item_try_again">Do It Again</string>
+    <string name="button_view_item_later">Maybe Later</string>
+    <string name="button_view_item_back">Back</string>
+    <string name="title_item_date_null">Whenever</string>
+    <string name="title_item_local_null">Wherever</string>
+
+    <!-- activity labels -->
+    <string name="label_bucket_list_new_item">New Item</string>
+    <string name="label_bucket_list_about">About</string>
+    <string name="label_bucket_list_edit_item">Edit Item</string>
+    <string name="label_bucket_list_view_item">View Item</string>
+    <string name="label_bucket_list_prefs">Bucket List Preferences</string>
+
+    <!-- Difficulty Values-->
+    <string name="diff_easy">Difficulty: Easy</string>
+    <string name="diff_medium">Difficulty: Medium</string>
+    <string name="diff_hard">Difficulty: Hard</string>
+    <string name="title_difficulty">Difficulty</string>
+
+    <!-- Settings values -->
+    <string name="shortcut_settings">s</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_sound_prefs">Sound</string>
+    <string name="desc_sound_prefs">Enable app sounds</string>
+    <string name="title_num_prefs">List Numbers</string>
+    <string name="desc_num_prefs">Items in bucket list are numbered</string>
+
+    <!-- pop-ups -->
+    <string name="popup_added">Item added</string>
+    <string name="popup_deleted">Item deleted</string>
+    <string name="popup_changed">Item changed</string>
+    <string name="popup_null_fields">Enter an activity or an event title</string>
+    <string name="popup_confirm">Are you sure?</string>
+    <string name="button_yes">Yes</string>
+    <string name="button_no">No</string>
+    <string name="button_ok">Done</string>
+    <string name="button_cancel">Cancel</string>
+
+    <!-- about screen -->
+    <string name="details_about">
+        Fill this Bucket List with things to do before you die.
+    Keep track of things to do as well as completed activities. If you can\'t
+        decide which bucket list item looks like the most fun, let the app choose one of your uncompleted activities at random.
+    </string>
+
+
+</resources>

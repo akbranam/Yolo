@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+content_bucket_list_new_item.xml: layout for new item screen
+Created by: Anna Branam
+Created on: 2/28/17
+Last Modified by: Anna Branam
+Last Modified on: 3/3/17
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/ll_new_item"
+              android:orientation="vertical"
+              android:background="@color/colorPrimaryBackground"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="30dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--item title-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/etxt_name_new_item"
+                android:hint="@string/new_item_name_hint"/>
+            <!-- item date-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etxt_date_new_item"
+                android:inputType="date"
+                android:ems="10"
+                android:hint="@string/new_item_date_hint"
+                android:layout_marginTop="5dp"/>
+            <!-- choose date button-->
+            <Button
+                android:text="@string/button_choose_date_new_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_pick_date_new_item"
+                style="@android:style/Widget.Material.Button.Borderless.Colored"
+                android:textSize="18sp"/>
+            <!-- item location-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/etxt_local_new_item"
+                android:hint="@string/new_item_local_hint"/>
+            <!-- difficulty display-->
+            <TextView
+                android:text="@string/diff_easy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_diff_new_item"
+                android:layout_marginTop="5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <!-- item difficulty meter-->
+            <SeekBar
+                style="@android:style/Widget.Material.SeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="2"
+                android:progress="0"
+                android:id="@+id/skbr_diff_meter_new_item"
+                android:layout_marginTop="15dp"
+                android:maxWidth="2dp"
+                android:layout_marginBottom="15dp"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <!--nope button-->
+                    <android.support.design.widget.FloatingActionButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        app:srcCompat="@drawable/ic_reject"
+                        android:id="@+id/fab_cancel_new_item"
+                        app:fabSize="normal"/>
+                    <!--yep button-->
+                    <android.support.design.widget.FloatingActionButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:id="@+id/fab_accept_new_item"
+                        app:fabSize="normal"
+                        app:srcCompat="@drawable/ic_accept"
+                        android:layout_marginLeft="100dp"/>
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
